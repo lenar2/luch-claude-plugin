@@ -4,7 +4,7 @@ LUCH connects AI agents to explicitly authorized tools and devices through a use
 
 ## Availability
 
-LUCH is in private-beta preparation. Independent new-user OAuth onboarding and device-pairing end-to-end verification is not yet complete. Installing this package alone does **not** grant access to computers, browsers, files or accounts. Features depend on your account, grants, and connected devices. Do not treat this submission candidate as a broadly available production service.
+LUCH is an operating service with access limited to enabled accounts. Independent new-user OAuth onboarding and device-pairing end-to-end verification is not yet complete. Installing this package alone does **not** grant access to computers, browsers, files or accounts. Features depend on your account, grants, and connected devices. Do not assume public self-service access or an independently verified multi-user release.
 
 ## Included components
 
@@ -14,17 +14,17 @@ LUCH is in private-beta preparation. Independent new-user OAuth onboarding and d
 
 ## Connection and safe use
 
-When LUCH public account access becomes available, connect through an officially supported MCP/OAuth flow, inspect granted tools, start with bounded read-only work, and revoke access when finished. Do not share credentials in chat. LUCH never grants private owner tools simply by installing this package.
+If your LUCH account has been enabled, connect through an officially supported MCP/OAuth flow, inspect granted tools, start with bounded read-only work, and revoke access when finished. Do not share credentials in chat. LUCH never grants private owner tools simply by installing this package.
 
 ## Public information
 
 - Home: https://luch.lenarsalimov.ru/
-- Getting started (prelaunch preview): https://luch.lenarsalimov.ru/docs/get-started/
-- Privacy (prelaunch draft): https://luch.lenarsalimov.ru/privacy/
-- Terms (prelaunch draft): https://luch.lenarsalimov.ru/terms/
-- Support (prelaunch preview): https://luch.lenarsalimov.ru/support/
+- Getting started: https://luch.lenarsalimov.ru/docs/get-started/
+- Privacy Policy (effective 31 October 2026): https://luch.lenarsalimov.ru/privacy/
+- Terms of Use (effective 31 October 2026): https://luch.lenarsalimov.ru/terms/
+- Support: https://luch.lenarsalimov.ru/support/
 
-These policy and support pages are preliminary and will need completion before general availability.
+Technical questions: https://github.com/lenar2/luch-claude-plugin/issues/new (public). Confidential security or privacy reports: https://github.com/lenar2/luch-claude-plugin/security/advisories/new (private GitHub channel). No guarantees of independently verified public onboarding are made.
 
 ## License and scope
 
