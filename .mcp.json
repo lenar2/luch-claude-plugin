@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "luch": {
+      "type": "http",
+      "url": "https://api.lenarsalimov.ru/luch/core/mcp"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "luch",
+  "displayName": "LUCH",
+  "version": "0.1.6",
+  "description": "Connect Claude to LUCH tools you explicitly authorize with OAuth. See available tools and permissions before acting; features depend on your account, connected devices and host.",
+  "author": {
+    "name": "Lenar Salimov",
+    "url": "https://luch.lenarsalimov.ru/"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://luch.lenarsalimov.ru/",
+  "icon": "./assets/logo-draft-text-only.png",
+  "documentationUrl": "https://luch.lenarsalimov.ru/docs/get-started/",
+  "supportUrl": "https://luch.lenarsalimov.ru/support/",
+  "privacyPolicyUrl": "https://luch.lenarsalimov.ru/privacy/",
+  "termsOfServiceUrl": "https://luch.lenarsalimov.ru/terms/",
+  "keywords": [
+    "LUCH",
+    "MCP",
+    "browser automation",
+    "authorized devices",
+    "OAuth",
+    "remote tools",
+    "user consent"
+  ]
+}
