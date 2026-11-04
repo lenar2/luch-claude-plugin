@@ -1,31 +1,57 @@
-# LUCH for Claude — public client package (0.1.6)
+# LUCH — Connect AI agents to the tools *you* authorize
 
-LUCH connects AI agents to explicitly authorized tools and devices through a user-scoped remote MCP endpoint. This client-side plugin contains skills and connection metadata. It contains **no server implementation, user credentials, or device access tokens**.
+**Public client preview v0.1.6 · Early-access service · Apache-2.0 client license**
 
-## Availability
+[Website](https://luch.lenarsalimov.ru/) · [Getting started](https://luch.lenarsalimov.ru/docs/get-started/) · [Demo walkthrough](docs/DEMO.md) · [Release notes](docs/RELEASE_NOTES_v0.1.6-preview.md) · [Security](SECURITY.md)
 
-LUCH is an operating service with access limited to enabled accounts. Independent new-user OAuth onboarding and device-pairing end-to-end verification is not yet complete. Installing this package alone does **not** grant access to computers, browsers, files or accounts. Features depend on your account, grants, and connected devices. Do not assume public self-service access or an independently verified multi-user release.
+> **RU:** LUCH — мост между ИИ-агентом и вашими разрешёнными устройствами, браузерами, файлами и сервисами. Пакеты можно скачать сейчас; самостоятельное подключение новых пользователей пока тестируется.
 
-## Included components
+LUCH is a permission-aware bridge between AI assistants and user-approved browsers, files, connected services and devices. Public client packages contain instructions and connection metadata, **not** the hosted server, access tokens, device credentials, or private user data.
 
-- 12 Claude skills under `skills/`, for choosing tools and permission-aware use. These are instructions, not extra APIs.
-- `.mcp.json` connecting to the isolated public LUCH MCP endpoint.
-- `.claude-plugin/plugin.json` with publisher metadata and Apache-2.0 client license.
+**Public code does not mean open access to someone else's computers.** Every real operation requires a supported host, an enabled LUCH account, OAuth authorization where supported, and the necessary device/tool permissions.
 
-## Connection and safe use
+## Pick your AI assistant
 
-If your LUCH account has been enabled, connect through an officially supported MCP/OAuth flow, inspect granted tools, start with bounded read-only work, and revoke access when finished. Do not share credentials in chat. LUCH never grants private owner tools simply by installing this package.
+| Client | Public package | How to start |
+| --- | --- | --- |
+| **Claude** | **[LUCH for Claude](https://github.com/lenar2/luch-claude-plugin)** (this repository) | Browse the 12 skills and `.mcp.json`. Install/connect using your Claude client's supported plugin/MCP flow; marketplace availability is separate. |
+| **Cursor** | [LUCH for Cursor](https://github.com/lenar2/luch-cursor) | Follow the [Cursor installation steps](https://github.com/lenar2/luch-cursor#installation-and-local-verification). |
+| **Gemini CLI** | [LUCH for Gemini](https://github.com/lenar2/luch-gemini) | `gemini extensions install https://github.com/lenar2/luch-gemini`, then follow the repo's OAuth instructions. |
+| **Kimi** | [Kimi adapter candidate](https://github.com/lenar2/luch-claude-plugin/tree/kimi-v0.1.6-candidate) | **Preview only**. Not yet a verified Kimi install or approved directory listing. |
 
-## Public information
+**Want to inspect the source?** [Download this Claude client package as ZIP](https://github.com/lenar2/luch-claude-plugin/archive/refs/heads/main.zip) or `git clone https://github.com/lenar2/luch-claude-plugin.git`. **The ZIP is source code, not a standalone Mac/iPhone installer.**
 
-- Home: https://luch.lenarsalimov.ru/
-- Getting started: https://luch.lenarsalimov.ru/docs/get-started/
-- Privacy Policy (effective 31 October 2026): https://luch.lenarsalimov.ru/privacy/
-- Terms of Use (effective 31 October 2026): https://luch.lenarsalimov.ru/terms/
-- Support: https://luch.lenarsalimov.ru/support/
+## What can LUCH help with?
 
-Technical questions: https://github.com/lenar2/luch-claude-plugin/issues/new (public). Confidential security or privacy reports: https://github.com/lenar2/luch-claude-plugin/security/advisories/new (private GitHub channel). No guarantees of independently verified public onboarding are made.
+- Discover tools and devices **explicitly linked to your account**.
+- Read approved files and browser context, subject to actual per-tool and host permissions.
+- Coordinate supported workflows across connected environments, only within granted scopes.
+- Ask for explicit consent before permission-sensitive or destructive actions.
 
-## License and scope
+[Read a safe, illustrative demonstration](docs/DEMO.md). It distinguishes example prompts from actions verified in a live user account.
 
-The files **in this repository** are licensed under Apache-2.0. This license does not include or open-source the separate, hosted LUCH server implementation, third-party services, user data, or trademarks. See `LICENSE`.
+## Status — understand before installing
+
+| Area | Status |
+| --- | --- |
+| Client source, skills and plugin metadata | **Public** |
+| Hosted LUCH website and onboarding documentation | **Online (checked 2026-11-05)** |
+| Unauthenticated request to public MCP | **401 expected (checked 2026-11-05)** |
+| Independent new-user signup → OAuth → device pairing → permitted action | **NOT YET VERIFIED** |
+| Multi-tenant isolation and revocation on an independent new-user E2E | **NOT YET VERIFIED** |
+| App marketplace approvals or public self-service availability | **Do not infer from this GitHub page** |
+
+**If you are not an enabled LUCH user, installing a client package alone will not grant operational access.** Public marketing remains in *early access* until the [release gates](docs/PUBLIC_RELEASE_GATES.md) are independently verified.
+
+## Help improve LUCH
+
+- **Star ⭐ this repository** if you want to follow the project. Stars measure developer interest, **not installs**.
+- [Open an issue](https://github.com/lenar2/luch-claude-plugin/issues/new) with reproducible technical feedback (no secrets).
+- See [documentation](https://luch.lenarsalimov.ru/docs/get-started/) and [support](https://luch.lenarsalimov.ru/support/).
+- Report private vulnerabilities through [GitHub Security Advisories](https://github.com/lenar2/luch-claude-plugin/security/advisories/new), not public issues.
+
+## What's inside this Claude client package
+
+`skills/` contains 12 permission-aware skills; `.mcp.json` points to the HTTPS OAuth-protected remote MCP endpoint; `.claude-plugin/plugin.json` contains metadata for the Claude package. `LICENSE` applies only to files in this public client repo. The separately hosted LUCH backend, user data, accounts, connected devices, and trademarks are **not** open-sourced by this license.
+
+[Privacy policy](https://luch.lenarsalimov.ru/privacy/) · [Terms](https://luch.lenarsalimov.ru/terms/) · [Support](https://luch.lenarsalimov.ru/support/)
