@@ -3,14 +3,7 @@
   "mcpServers": {
     "luch": {
       "type": "streamable-http",
-      "url": "https://luch.lenarsalimov.ru/luch/mcp",
-      "extensions": {
-        "com.openai": {
-          "auth": {
-            "type": "oauth"
-          }
-        }
-      }
+      "url": "https://luch.lenarsalimov.ru/luch/mcp"
     }
   }
 }
