@@ -1,57 +1,49 @@
-# LUCH — Connect AI agents to the tools *you* authorize
+# LUCH — Make AI useful beyond the chat
 
-**Public client preview v0.1.6 · Early-access service · Apache-2.0 client license**
+**LUCH connects AI assistants to the browsers, computers, files and servers you authorize.**
 
-[Website](https://luch.lenarsalimov.ru/) · [Getting started](https://luch.lenarsalimov.ru/docs/get-started/) · [Demo walkthrough](docs/DEMO.md) · [Release notes](docs/RELEASE_NOTES_v0.1.6-preview.md) · [Security](SECURITY.md)
+[Website](https://luch.lenarsalimov.ru/) · [Getting started](https://luch.lenarsalimov.ru/docs/get-started/) · [Русский](README.ru.md) · [Security](https://luch.lenarsalimov.ru/security/)
 
-> **RU:** LUCH — мост между ИИ-агентом и вашими разрешёнными устройствами, браузерами, файлами и сервисами. Пакеты можно скачать сейчас; самостоятельное подключение новых пользователей пока тестируется.
+> **Early access:** Public client packages are available, but independent new-user onboarding and end-to-end access are not yet verified.
 
-LUCH is a permission-aware bridge between AI assistants and user-approved browsers, files, connected services and devices. Public client packages contain instructions and connection metadata, **not** the hosted server, access tokens, device credentials, or private user data.
+## What can LUCH actually do?
 
-**Public code does not mean open access to someone else's computers.** Every real operation requires a supported host, an enabled LUCH account, OAuth authorization where supported, and the necessary device/tool permissions.
-
-## Pick your AI assistant
-
-| Client | Public package | How to start |
-| --- | --- | --- |
-| **Claude** | **[LUCH for Claude](https://github.com/lenar2/luch-claude-plugin)** (this repository) | Browse the 12 skills and `.mcp.json`. Install/connect using your Claude client's supported plugin/MCP flow; marketplace availability is separate. |
-| **Cursor** | [LUCH for Cursor](https://github.com/lenar2/luch-cursor) | Follow the [Cursor installation steps](https://github.com/lenar2/luch-cursor#installation-and-local-verification). |
-| **Gemini CLI** | [LUCH for Gemini](https://github.com/lenar2/luch-gemini) | `gemini extensions install https://github.com/lenar2/luch-gemini`, then follow the repo's OAuth instructions. |
-| **Kimi** | [Kimi adapter candidate](https://github.com/lenar2/luch-claude-plugin/tree/kimi-v0.1.6-candidate) | **Preview only**. Not yet a verified Kimi install or approved directory listing. |
-
-**Want to inspect the source?** [Download this Claude client package as ZIP](https://github.com/lenar2/luch-claude-plugin/archive/refs/heads/main.zip) or `git clone https://github.com/lenar2/luch-claude-plugin.git`. **The ZIP is source code, not a standalone Mac/iPhone installer.**
-
-## What can LUCH help with?
-
-- Discover tools and devices **explicitly linked to your account**.
-- Read approved files and browser context, subject to actual per-tool and host permissions.
-- Coordinate supported workflows across connected environments, only within granted scopes.
-- Ask for explicit consent before permission-sensitive or destructive actions.
-
-[Read a safe, illustrative demonstration](docs/DEMO.md). It distinguishes example prompts from actions verified in a live user account.
-
-## Status — understand before installing
-
-| Area | Status |
+| Your request | LUCH capability |
 | --- | --- |
-| Client source, skills and plugin metadata | **Public** |
-| Hosted LUCH website and onboarding documentation | **Online (checked 2026-11-05)** |
-| Unauthenticated request to public MCP | **401 expected (checked 2026-11-05)** |
-| Independent new-user signup → OAuth → device pairing → permitted action | **NOT YET VERIFIED** |
-| Multi-tenant isolation and revocation on an independent new-user E2E | **NOT YET VERIFIED** |
-| App marketplace approvals or public self-service availability | **Do not infer from this GitHub page** |
+| “Open two websites and compare their details.” | Run an isolated, temporary server browser to read and interact with public web pages. |
+| “Check my server and tell me whether it is healthy.” | Discover a permitted paired server and run a bounded diagnostic command. |
+| “Find the project file I gave access to.” | Read allowed files through a paired device or connected service. |
+| “Which of my devices are online?” | List account-authorized devices and their current availability. |
+| “Use an application on my connected Mac.” | Use supported browser and computer actions when the device is online and access is granted. |
 
-**If you are not an enabled LUCH user, installing a client package alone will not grant operational access.** Public marketing remains in *early access* until the [release gates](docs/PUBLIC_RELEASE_GATES.md) are independently verified.
+**One workflow, multiple execution surfaces:** An AI assistant can work through the remote MCP connection, a temporary server browser, or an authorized paired computer according to the task and available permissions.
 
-## Help improve LUCH
+## How to start
 
-- **Star ⭐ this repository** if you want to follow the project. Stars measure developer interest, **not installs**.
-- [Open an issue](https://github.com/lenar2/luch-claude-plugin/issues/new) with reproducible technical feedback (no secrets).
-- See [documentation](https://luch.lenarsalimov.ru/docs/get-started/) and [support](https://luch.lenarsalimov.ru/support/).
-- Report private vulnerabilities through [GitHub Security Advisories](https://github.com/lenar2/luch-claude-plugin/security/advisories/new), not public issues.
+1. Pick a supported AI client.
+2. Connect an enabled LUCH account through the host's supported authentication process.
+3. Ask for a specific task and inspect the actual result.
 
-## What's inside this Claude client package
+Installation alone does not enroll a new user or connect their devices. The availability and permission scope vary by account and AI host.
 
-`skills/` contains 12 permission-aware skills; `.mcp.json` points to the HTTPS OAuth-protected remote MCP endpoint; `.claude-plugin/plugin.json` contains metadata for the Claude package. `LICENSE` applies only to files in this public client repo. The separately hosted LUCH backend, user data, accounts, connected devices, and trademarks are **not** open-sourced by this license.
+## Choose an integration
 
-[Privacy policy](https://luch.lenarsalimov.ru/privacy/) · [Terms](https://luch.lenarsalimov.ru/terms/) · [Support](https://luch.lenarsalimov.ru/support/)
+| Client | Link | Status |
+| --- | --- | --- |
+| **ChatGPT and Codex** | [OpenAI client candidate](integrations/chatgpt/) | Existing private plugin; public review pending |
+| **Claude** | [Claude client package](.claude-plugin/plugin.json) | Public source |
+| **Cursor** | [Cursor plugin](https://github.com/lenar2/luch-cursor) | Public source |
+| **Gemini CLI** | [Gemini extension](https://github.com/lenar2/luch-gemini) | Public source |
+| **Kimi** | [Kimi candidate](https://github.com/lenar2/luch-claude-plugin/tree/kimi-v0.1.6-candidate) | Testing and submission not completed |
+
+This repository contains the **Claude integration**. LUCH itself is a **platform-independent product**: [luch.lenarsalimov.ru](https://luch.lenarsalimov.ru/). The Claude repository name is kept for compatibility with existing installation and review links.
+
+## Responsible release scope
+
+Available for enabled accounts: selected cloud-browser, paired-server, local browser, file and computer capabilities. A complete new-user OAuth and device-pairing flow is **not yet independently verified**. iPhone control and live AI-agent coordination are separate tracks, not claims for the public Core release.
+
+[Release gates](docs/PUBLIC_RELEASE_GATES.md) · [Illustrative demo](docs/DEMO.md) · [Support](https://luch.lenarsalimov.ru/support/)
+
+**Follow LUCH:** Star this repository to bookmark the project. Stars are not a count of installed users.
+
+Apache-2.0 covers these public client files only, not the hosted server or user data.
