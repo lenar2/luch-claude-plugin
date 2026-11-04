@@ -1,0 +1,28 @@
+{
+  "name": "luch",
+  "version": "0.1.6",
+  "description": "Connect Kimi to authorized LUCH tools through OAuth-scoped remote MCP. Capabilities depend on user consent, active hosts, and granted permissions.",
+  "keywords": [
+    "LUCH",
+    "MCP",
+    "browser automation",
+    "authorized devices",
+    "OAuth"
+  ],
+  "author": "Lenar Salimov",
+  "homepage": "https://luch.lenarsalimov.ru/",
+  "license": "Apache-2.0",
+  "skills": "./skills/",
+  "mcpServers": {
+    "luch": {
+      "url": "https://api.lenarsalimov.ru/luch/core/mcp"
+    }
+  },
+  "interface": {
+    "displayName": "LUCH",
+    "shortDescription": "Connect Kimi to your authorized tools and devices",
+    "longDescription": "Use user-authorized LUCH capabilities across browsers, files, servers and connected devices. Access requires explicit OAuth authorization; individual capabilities and permission scopes vary by account and host.",
+    "developerName": "Lenar Salimov",
+    "websiteURL": "https://luch.lenarsalimov.ru/"
+  }
+}
