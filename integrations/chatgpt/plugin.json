@@ -1,0 +1,45 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "luch",
+  "version": "0.1.6",
+  "description": "Connect AI to your approved browsers, computers, files and servers through a permission-scoped MCP service.",
+  "author": {
+    "name": "Lenar Salimov",
+    "url": "https://luch.lenarsalimov.ru/"
+  },
+  "homepage": "https://luch.lenarsalimov.ru/",
+  "repository": "https://github.com/lenar2/luch-claude-plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "AI tools",
+    "remote browser",
+    "authorized computers",
+    "server companion",
+    "OAuth",
+    "MCP"
+  ],
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/luch-capabilities/SKILL.md",
+      "interface": {
+        "displayName": "LUCH",
+        "shortDescription": "Work across your authorized tools",
+        "longDescription": "Connect ChatGPT to browsers, approved files and paired computers or servers through LUCH. Use an isolated server browser for supported web tasks or selected capabilities on authorized devices. Each action depends on your account, device status, host support and granted permissions. New-user onboarding is currently limited; installing the plugin alone does not enable an account.",
+        "developerName": "Lenar Salimov",
+        "category": "Developer Tools",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://luch.lenarsalimov.ru/",
+        "privacyPolicyURL": "https://luch.lenarsalimov.ru/privacy/",
+        "termsOfServiceURL": "https://luch.lenarsalimov.ru/terms/",
+        "defaultPrompt": [
+          "Show the LUCH tools and devices actually available to my account. Do not change anything.",
+          "Use an isolated browser to read a public page, summarize what you found and release the session.",
+          "Check the status of a server that I have explicitly paired with LUCH."
+        ]
+      }
+    }
+  }
+}
