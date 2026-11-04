@@ -1,4 +1,6 @@
-# LUCH — Make AI useful beyond the chat
+# LUCH for Claude — v0.1.6
+
+**This repository is the Claude client adapter.** The independent, platform-neutral product and the main place to ⭐ Star the project is **[LUCH on GitHub](https://github.com/lenar2/luch)**. See [the global website](https://luch.lenarsalimov.ru/) for all supported clients.
 
 **LUCH connects AI assistants to the browsers, computers, files and servers you authorize.**
 
