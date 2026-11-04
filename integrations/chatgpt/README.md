@@ -20,7 +20,7 @@ python3 integrations/chatgpt/build_package.py
 
 This stages the two manifests at the **archive root**, adds the twelve public `skills/*/SKILL.md` files and the Apache-2.0 client license, and creates `dist/luch-chatgpt-0.1.6-preview.zip`.
 
-`mcp.json` declares OAuth by discovery with no embedded client secret. The host must independently verify OAuth interoperability; a 401 response proves rejection of anonymous access, **not** successful sign-in.
+`mcp.json` is strictly portable and contains the HTTPS MCP URL, but no embedded credentials or nonstandard fields. The LUCH server returns HTTP 401 with an OAuth resource-metadata challenge for unauthenticated requests. The hosting ChatGPT connection must discover and configure OAuth independently; a 401 proves anonymous rejection, **not** a successful sign-in. Some OpenAI-specific OAuth fields documented for plugin submission are not accepted by the base Agent Plugins 1.0.0 JSON schema; configure any additional auth details in the submission portal after supported-host testing.
 
 ## What to test before OpenAI Directory submission
 

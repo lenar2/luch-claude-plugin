@@ -17,7 +17,7 @@ assert plugin["$schema"].startswith("https://agent-plugins.org/")
 assert plugin["extensions"]["com.openai"]["interface"]["displayName"] == "LUCH"
 assert mcp["mcpServers"]["luch"]["type"] == "streamable-http"
 assert mcp["mcpServers"]["luch"]["url"] == "https://luch.lenarsalimov.ru/luch/mcp"
-assert mcp["mcpServers"]["luch"]["extensions"]["com.openai"]["auth"]["type"] == "oauth"
+assert set(mcp["mcpServers"]["luch"].keys()) == {"type", "url"}  # strict Agent Plugins portability
 skills = sorted((root / "skills").glob("*/SKILL.md"))
 assert len(skills) == 12, f"expected 12 portable skills, found {len(skills)}"
 for path in skills:
