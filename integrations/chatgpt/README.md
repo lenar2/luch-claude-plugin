@@ -1,39 +1,34 @@
-# LUCH for ChatGPT and Codex — submission candidate
+<p><img src="https://raw.githubusercontent.com/lenar2/luch/main/website/assets/luch-ray.svg" width="36" alt=""></p>
 
-**Name:** LUCH (not “LUCH Claude Plugin” or “LUCH MCP”).  
-**Product:** a permission-scoped AI action layer for authorized browsers, files, computers and paired servers.  
-**State:** public package **candidate**, **not** an approved or published OpenAI Directory listing.
+# LUCH for ChatGPT
+### From a request in chat to work in permitted tools.
 
-## Existing private installation
+[**A verified founder-environment case**](https://github.com/lenar2/luch/blob/design/hea-evidence-first-20261107/docs/REAL_WORK.md) · [**Choose a connection path**](https://github.com/lenar2/luch/blob/design/hea-evidence-first-20261107/docs/START_HERE.md) · [LUCH home](https://github.com/lenar2/luch)
 
-There is already a personal **LUCH 0.3.51** plugin in the owner's ChatGPT account. Its canonical production MCP origin is **https://luch.lenarsalimov.ru/luch/mcp**. Do **not** modify or replace the active private plugin as a side effect of preparing this public candidate.
+**Status: submission candidate — NOT an approved or published OpenAI Directory listing.** Installing this public source does not enable a new LUCH account.
 
-The GitHub public client adapter release is 0.1.6. Its version does not imply that backend 0.3.51 is being redeployed.
+## What a useful result looks like
 
-## Packaging
+The founder asked to redesign LUCH's own site, without touching the Mac. The assistant used authorized server and GitHub resources to inspect, revise, verify and publish the site. [Exact commit](https://github.com/lenar2/luch/commit/06daa8d6b89a3dfd65e74628b895879e79a0c931) · [release evidence](https://github.com/lenar2/ai-factory-evidence/issues/4009#issuecomment-6692683064).
 
-This folder contains the OpenAI portable `plugin.json` and `mcp.json`. To build the candidate ZIP, run from the repository root:
+This is **not** a fresh-user ChatGPT integration test; it is a real founder-environment LUCH workflow. The [later human-experience audit](https://github.com/lenar2/ai-factory-evidence/issues/4009#issuecomment-6705944671) did not mark the published design as finished.
 
-```bash
-python3 integrations/chatgpt/build_package.py
-```
+## If you want to connect
 
-This stages the two manifests at the **archive root**, adds the twelve public `skills/*/SKILL.md` files and the Apache-2.0 client license, and creates `dist/luch-chatgpt-0.1.6-preview.zip`.
+**Using an existing enabled account?** Use the supported, host-managed OAuth connection for this portable candidate and inspect actual available tools before trying a read-only request. Do not copy tokens from another account.
 
-`mcp.json` is strictly portable and contains the HTTPS MCP URL, but no embedded credentials or nonstandard fields. The LUCH server returns HTTP 401 with an OAuth resource-metadata challenge for unauthenticated requests. The hosting ChatGPT connection must discover and configure OAuth independently; a 401 proves anonymous rejection, **not** a successful sign-in. Some OpenAI-specific OAuth fields documented for plugin submission are not accepted by the base Agent Plugins 1.0.0 JSON schema; configure any additional auth details in the submission portal after supported-host testing.
+**Not already enabled?** A public directory install and self-service signup path are **not verified**. Check [availability](https://luch.lenarsalimov.ru/en/status/) before assuming access.
 
-## What to test before OpenAI Directory submission
+**First safe task:** “Read this public page and summarize it with a source link.” Follow only permissions visible for your current account and client.
 
-1. Complete verified publisher identity and domain ownership for the production MCP origin.
-2. Confirm registration/discovery works from a **fresh non-owner ChatGPT account**.
-3. Run the real authenticated MCP tool discovery and inspect read/write risk annotations.
-4. Obtain an independent reviewer fixture and test account, perform authorized read-only browser test, paired server health check, and denial on an unpaired device.
-5. Check revocation, error states, device isolation and user approval.
-6. Record genuine walkthrough footage from the supported client and verify documentation, privacy, terms and support.
-7. Complete OpenAI's automated scan and submit in the official portal; publish only after review and explicit owner approval.
+<details><summary>For OpenAI integration reviewers — package, endpoints and release gates</summary>
 
-**No standalone binary, no private server source, no access tokens and no agent auto-execution hooks** are included.
+- **Public candidate v0.1.6:** portable `plugin.json` and `mcp.json`, twelve public skills and Apache-2.0 license. From the parent repository root run `python3 integrations/chatgpt/build_package.py` to create `dist/luch-chatgpt-0.1.6-preview.zip`.
+- **Separate private installation:** the founder has a LUCH 0.3.51 personal plugin, at the private production MCP origin `https://luch.lenarsalimov.ru/luch/mcp`. **Do not modify or replace that installation** while preparing this public candidate.
+- The portable client declares the public HTTPS MCP service; it embeds no credentials. An anonymous HTTP 401/OAuth metadata challenge is **not** evidence of successful consent or independent account access.
+- **Before submission:** publisher identity/domain, new non-owner ChatGPT OAuth, actual tool discovery and risk annotations, independently authorized test devices, read-only browser task, unpaired-device denial, revocation, explicit approval for consequences, genuine walkthrough recording, automated scan, then owner-approved submission.
+- The public candidate is **not** an iPhone installer, a standalone application or a route into the founder's private devices.
 
-Docs: https://developers.openai.com/plugins/build/plugins and https://developers.openai.com/plugins/deploy/submission
+[Detailed guidance](https://developers.openai.com/plugins/build/plugins) · [Submission docs](https://developers.openai.com/plugins/deploy/submission) · [Privacy](https://luch.lenarsalimov.ru/privacy/) · [Terms](https://luch.lenarsalimov.ru/terms/)
 
-This is a *preview candidate*. OpenAI plugin review requires operational completeness; do not submit an incomplete demo as a finished public product.
+</details>
