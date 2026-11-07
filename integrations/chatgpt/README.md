@@ -30,6 +30,13 @@ You need to understand a topic before making a decision.
 - Example prompts for discovering the tools available to the current account and starting with a read-only task.
 - A package builder for the public v0.1.6 preview.
 
+## There is more to LUCH than this ChatGPT example
+
+I am building one platform for **browser work, local tabs, files, authorized computers, server diagnostics, connected services and multi-step tasks**. Its 12 public skills also describe tool discovery, target selection, safety and troubleshooting. This page focuses on a conversational research scenario; it is not the limit of the LUCH product.
+
+[**Explore all 12 capabilities →**](https://github.com/lenar2/luch/blob/main/docs/CAPABILITIES.md)
+
+A given ChatGPT installation can use only the LUCH tools actually exposed to that account and host.
 ## Connect the ChatGPT candidate
 
 1. Build the package from the parent repository root:

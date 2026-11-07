@@ -34,6 +34,13 @@ You have a project with several moving parts. Two approved documents describe th
 
 The public plugin contains 12 skills that describe these workflows. The tools available in a live session are determined by the current Claude host, your LUCH account and the permissions you grant.
 
+## The larger LUCH behind Claude
+
+I built LUCH as one connected system, not four isolated plugins. Alongside this document-focused workflow, its 12 public skills cover **isolated web browsing, a separately authorized local browser, tabs, files, native computer actions, servers, supported services, multi-step work, capability discovery, routing, safety and troubleshooting**.
+
+[**Explore the complete LUCH capability map →**](https://github.com/lenar2/luch/blob/main/docs/CAPABILITIES.md)
+
+What Claude can use in a particular session still depends on the exact tools, grants and paired resources it sees.
 ## Bring LUCH into Claude
 
 1. Open this repository and use Claude's supported plugin installation flow for the `.claude-plugin/plugin.json` manifest.
