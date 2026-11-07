@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "luch",
   "version": "0.1.6",
-  "description": "Connect AI to your approved browsers, computers, files and servers through a permission-scoped MCP service.",
+  "description": "Turn a conversation into source-backed work across public pages and the LUCH resources your account has selected.",
   "author": {
     "name": "Lenar Salimov",
     "url": "https://luch.lenarsalimov.ru/"
@@ -23,8 +23,8 @@
       "onboardingSkill": "./skills/luch-capabilities/SKILL.md",
       "interface": {
         "displayName": "LUCH",
-        "shortDescription": "Work across your authorized tools",
-        "longDescription": "Connect ChatGPT to browsers, approved files and paired computers or servers through LUCH. Use an isolated server browser for supported web tasks or selected capabilities on authorized devices. Each action depends on your account, device status, host support and granted permissions. New-user onboarding is currently limited; installing the plugin alone does not enable an account.",
+        "shortDescription": "Turn questions into inspectable work",
+        "longDescription": "Connect ChatGPT to the LUCH tools available to your account. Research public pages, compare selected sources and, where granted, work with approved files or paired resources. Return with source links and a result you can inspect.",
         "developerName": "Lenar Salimov",
         "category": "Developer Tools",
         "capabilities": [
@@ -35,9 +35,9 @@
         "privacyPolicyURL": "https://luch.lenarsalimov.ru/privacy/",
         "termsOfServiceURL": "https://luch.lenarsalimov.ru/terms/",
         "defaultPrompt": [
-          "Show the LUCH tools and devices actually available to my account. Do not change anything.",
-          "Use an isolated browser to read a public page, summarize what you found and release the session.",
-          "Check the status of a server that I have explicitly paired with LUCH."
+          "Compare these two public pages and give me a concise brief with direct source links.",
+          "Read the documents in my approved folder and identify the three main differences. Do not edit anything.",
+          "Show the LUCH tools actually available to my account and their current permission scope."
         ]
       }
     }

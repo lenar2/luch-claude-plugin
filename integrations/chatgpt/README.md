@@ -1,34 +1,63 @@
-<p><img src="https://raw.githubusercontent.com/lenar2/luch/main/website/assets/luch-ray.svg" width="36" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/lenar2/luch/main/website/assets/luch-ray.svg" width="38" alt="LUCH"></p>
 
 # LUCH for ChatGPT
-### From a request in chat to work in permitted tools.
+### Turn a question into a sourced brief — then decide what to do.
 
-[**A verified founder-environment case**](https://github.com/lenar2/luch/blob/main/docs/REAL_WORK.md) · [**Choose a connection path**](https://github.com/lenar2/luch/blob/main/docs/START_HERE.md) · [LUCH home](https://github.com/lenar2/luch) · [Русский](README.ru.md)
+ChatGPT is where you shape the question. **LUCH can bring selected web and connected resources into the work**, so the conversation can return with sources, comparisons and a result you can inspect.
 
-**Status: submission candidate — NOT an approved or published OpenAI Directory listing.** Installing this public source does not enable a new LUCH account.
+[**See the ChatGPT workflow**](CHATGPT_WORKFLOW.md) · [**Package and setup**](#connect-the-chatgpt-candidate) · [Русский](README.ru.md) · [LUCH platform](https://github.com/lenar2/luch)
 
-## What a useful result looks like
+![ChatGPT and LUCH workflow: question, source material and a brief with links](assets/chatgpt-workflow.svg)
 
-The founder asked to redesign LUCH's own site, without touching the Mac. The assistant used authorized server and GitHub resources to inspect, revise, verify and publish the site. [Exact commit](https://github.com/lenar2/luch/commit/06daa8d6b89a3dfd65e74628b895879e79a0c931) · [release evidence](https://github.com/lenar2/ai-factory-evidence/issues/4009#issuecomment-6692683064).
+## A ChatGPT workflow: from a question to a useful brief
 
-This is **not** a fresh-user ChatGPT integration test; it is a real founder-environment LUCH workflow. The [later human-experience audit](https://github.com/lenar2/ai-factory-evidence/issues/4009#issuecomment-6705944671) did not mark the published design as finished.
+You need to understand a topic before making a decision.
 
-## If you want to connect
+1. Ask ChatGPT to investigate a specific question.
+2. Use the LUCH browser route to read the public pages relevant to that question, when that tool is exposed to your session.
+3. If your account has an approved file connection, bring in the selected documents as well.
+4. Ask for a comparison that separates what each source says, where they agree and what remains uncertain.
+5. Get a concise brief with source links and a clear next question.
 
-**Using an existing enabled account?** Use the supported, host-managed OAuth connection for this portable candidate and inspect actual available tools before trying a read-only request. Do not copy tokens from another account.
+**What changes:** the conversation is connected to the material behind the answer. You can open the sources, inspect the summary and decide what happens next.
 
-**Not already enabled?** A public directory install and self-service signup path are **not verified**. Check [availability](https://luch.lenarsalimov.ru/en/status/) before assuming access.
+[**Open the step-by-step workflow →**](CHATGPT_WORKFLOW.md)
 
-**First safe task:** “Read this public page and summarize it with a source link.” Follow only permissions visible for your current account and client.
+## What the ChatGPT candidate contains
 
-<details><summary>For OpenAI integration reviewers — package, endpoints and release gates</summary>
+- A portable plugin manifest and remote MCP configuration.
+- Twelve LUCH skills for browser, files, connected resources, safety and multi-step workflows.
+- Example prompts for discovering the tools available to the current account and starting with a read-only task.
+- A package builder for the public v0.1.6 preview.
 
-- **Public candidate v0.1.6:** portable `plugin.json` and `mcp.json`, twelve public skills and Apache-2.0 license. From the parent repository root run `python3 integrations/chatgpt/build_package.py` to create `dist/luch-chatgpt-0.1.6-preview.zip`.
-- **Separate private installation:** the founder has a separate LUCH 0.3.51 personal plugin. **Do not modify or replace that installation** while preparing this public candidate; the public source is not its entry point.
-- The portable client declares the public HTTPS MCP service; it embeds no credentials. An anonymous HTTP 401/OAuth metadata challenge is **not** evidence of successful consent or independent account access.
-- **Before submission:** publisher identity/domain, new non-owner ChatGPT OAuth, actual tool discovery and risk annotations, independently authorized test devices, read-only browser task, unpaired-device denial, revocation, explicit approval for consequences, genuine walkthrough recording, automated scan, then owner-approved submission.
-- The public candidate is **not** an iPhone installer, a standalone application or a route into the founder's private devices.
+## Connect the ChatGPT candidate
 
-[Detailed guidance](https://developers.openai.com/plugins/build/plugins) · [Submission docs](https://developers.openai.com/plugins/deploy/submission) · [Privacy](https://luch.lenarsalimov.ru/privacy/) · [Terms](https://luch.lenarsalimov.ru/terms/)
+1. Build the package from the parent repository root:
+
+```bash
+python3 integrations/chatgpt/build_package.py
+```
+
+2. Inspect the generated `dist/luch-chatgpt-0.1.6-preview.zip`.
+3. Use the supported ChatGPT plugin connection and OAuth flow if it is available to your account.
+4. Ask ChatGPT to show the LUCH tools it can actually see, then try a read-only public-page summary.
+
+[Plugin manifest](plugin.json) · [MCP configuration](mcp.json) · [Build script](build_package.py)
+
+## Your conversation. Your sources. Your next move.
+
+LUCH is used for real work in the founder's connected environment. This public ChatGPT package is a candidate for evaluation; it is not represented as an approved OpenAI Directory listing. Account access and host availability are separate from building or downloading the package.
+
+The founder's [documented LUCH outcome](https://github.com/lenar2/luch/blob/main/docs/REAL_WORK.md) shows the broader product in action. It is not presented as a ChatGPT-specific execution test.
+
+[Service status](https://luch.lenarsalimov.ru/en/status/) · [Support](https://luch.lenarsalimov.ru/support/) · [Privacy](https://luch.lenarsalimov.ru/privacy/)
+
+<details><summary>For integration reviewers</summary>
+
+The portable package is v0.1.6 and contains no credentials. The founder's private ChatGPT installation (v0.3.51) is a separate environment and is not replaced by this candidate.
+
+Before a public directory submission, a new non-owner user must complete OAuth, discover the actual tools, perform an authorized read-only task, receive denial on an unapproved resource, and verify revocation. These are distinct acceptance tests; package generation is not a substitute.
+
+[OpenAI plugin guidance](https://developers.openai.com/plugins/build/plugins) · [Submission guidance](https://developers.openai.com/plugins/deploy/submission) · [Security](https://luch.lenarsalimov.ru/en/safety/)
 
 </details>
