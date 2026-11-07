@@ -2,7 +2,7 @@
   "name": "luch",
   "displayName": "LUCH",
   "version": "0.1.6",
-  "description": "Connect Claude to LUCH tools you explicitly authorize with OAuth. See available tools and permissions before acting; features depend on your account, connected devices and host.",
+  "description": "Bring Claude's reasoning to the work around your brief: compare selected web sources and authorized files, prepare a decision note, and return with a result you can inspect.",
   "author": {
     "name": "Lenar Salimov",
     "url": "https://luch.lenarsalimov.ru/"
