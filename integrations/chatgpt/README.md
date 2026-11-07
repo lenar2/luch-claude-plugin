@@ -3,7 +3,7 @@
 # LUCH for ChatGPT
 ### From a request in chat to work in permitted tools.
 
-[**A verified founder-environment case**](https://github.com/lenar2/luch/blob/design/hea-evidence-first-20261107/docs/REAL_WORK.md) · [**Choose a connection path**](https://github.com/lenar2/luch/blob/design/hea-evidence-first-20261107/docs/START_HERE.md) · [LUCH home](https://github.com/lenar2/luch)
+[**A verified founder-environment case**](https://github.com/lenar2/luch/blob/main/docs/REAL_WORK.md) · [**Choose a connection path**](https://github.com/lenar2/luch/blob/main/docs/START_HERE.md) · [LUCH home](https://github.com/lenar2/luch) · [Русский](README.ru.md)
 
 **Status: submission candidate — NOT an approved or published OpenAI Directory listing.** Installing this public source does not enable a new LUCH account.
 
@@ -24,7 +24,7 @@ This is **not** a fresh-user ChatGPT integration test; it is a real founder-envi
 <details><summary>For OpenAI integration reviewers — package, endpoints and release gates</summary>
 
 - **Public candidate v0.1.6:** portable `plugin.json` and `mcp.json`, twelve public skills and Apache-2.0 license. From the parent repository root run `python3 integrations/chatgpt/build_package.py` to create `dist/luch-chatgpt-0.1.6-preview.zip`.
-- **Separate private installation:** the founder has a LUCH 0.3.51 personal plugin, at the private production MCP origin `https://luch.lenarsalimov.ru/luch/mcp`. **Do not modify or replace that installation** while preparing this public candidate.
+- **Separate private installation:** the founder has a separate LUCH 0.3.51 personal plugin. **Do not modify or replace that installation** while preparing this public candidate; the public source is not its entry point.
 - The portable client declares the public HTTPS MCP service; it embeds no credentials. An anonymous HTTP 401/OAuth metadata challenge is **not** evidence of successful consent or independent account access.
 - **Before submission:** publisher identity/domain, new non-owner ChatGPT OAuth, actual tool discovery and risk annotations, independently authorized test devices, read-only browser task, unpaired-device denial, revocation, explicit approval for consequences, genuine walkthrough recording, automated scan, then owner-approved submission.
 - The public candidate is **not** an iPhone installer, a standalone application or a route into the founder's private devices.

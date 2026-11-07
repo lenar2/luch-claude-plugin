@@ -5,7 +5,7 @@
 
 Claude is where you explain what you need. **LUCH is the connection to websites, files and devices you choose to authorize**, when your account and host support them.
 
-[**LUCH in action**](https://github.com/lenar2/luch/blob/design/hea-evidence-first-20261107/docs/REAL_WORK.md) · [**Connection path**](#your-way-in) · [Русский](README.ru.md) · [LUCH home](https://github.com/lenar2/luch)
+[**LUCH in action**](https://github.com/lenar2/luch/blob/main/docs/REAL_WORK.md) · [**Connection path**](#your-way-in) · [Русский](README.ru.md) · [LUCH home](https://github.com/lenar2/luch)
 
 > **Current availability:** client source is public; a fresh customer's Claude sign-in, marketplace approval and device pairing are **not** independently verified. A published adapter does not grant service access.
 
@@ -13,7 +13,7 @@ Claude is where you explain what you need. **LUCH is the connection to websites,
 
 A founder asked the assistant to turn the over-technical LUCH website into a human-facing product while leaving the Mac untouched. Through authorized server and GitHub tools, the site was inspected, revised and released. The [exact public commit](https://github.com/lenar2/luch/commit/06daa8d6b89a3dfd65e74628b895879e79a0c931) and [release QA](https://github.com/lenar2/ai-factory-evidence/issues/4009#issuecomment-6692683064) can be inspected.
 
-**This is evidence for LUCH in the founder's environment, not proof that Claude performed that task or that a new Claude customer can connect today.** [Read the full case and the later critical review](https://github.com/lenar2/luch/blob/design/hea-evidence-first-20261107/docs/REAL_WORK.md).
+**This is evidence for LUCH in the founder's environment, not proof that Claude performed that task or that a new Claude customer can connect today.** [Read the full case and the later critical review](https://github.com/lenar2/luch/blob/main/docs/REAL_WORK.md).
 
 ## What Claude could ask LUCH to do
 
