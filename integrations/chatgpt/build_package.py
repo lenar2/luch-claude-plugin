@@ -27,6 +27,10 @@ entries = {
     "plugin.json": src / "plugin.json",
     "mcp.json": src / "mcp.json",
     "README.md": src / "README.md",
+    "README.ru.md": src / "README.ru.md",
+    "CHATGPT_WORKFLOW.md": src / "CHATGPT_WORKFLOW.md",
+    "CHATGPT_WORKFLOW.ru.md": src / "CHATGPT_WORKFLOW.ru.md",
+    "assets/chatgpt-workflow.svg": src / "assets" / "chatgpt-workflow.svg",
     "LICENSE": root / "LICENSE",
 }
 for item in skills:
