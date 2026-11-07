@@ -3,7 +3,7 @@
 # LUCH for Claude
 ### Turn scattered material into a decision you can explain.
 
-Claude helps you reason. **LUCH brings the selected sources and tools around your work into the conversation** — so the answer can become a comparison, a decision brief or a draft grounded in material you can inspect.
+I built this Claude integration so reasoning can reach the materials behind it. **LUCH brings the selected sources and tools around your work into the conversation** — so the answer can become a comparison, a decision brief or a draft grounded in material you can inspect.
 
 [**See the Claude workflow**](docs/CLAUDE_WORKFLOW.md) · [**Connect in Claude**](#bring-luch-into-claude) · [Русский](README.ru.md) · [LUCH platform](https://github.com/lenar2/luch)
 
@@ -47,13 +47,13 @@ The public plugin contains 12 skills that describe these workflows. The tools av
 
 You choose the material, the device and the scope. Claude can prepare a draft or proposed change; saving, publishing or making an external change remains a separate decision.
 
-LUCH is used for real work in the founder's connected environment. The public plugin source is available to inspect; account activation and host-specific onboarding are separate from installing the package. See [service status](https://luch.lenarsalimov.ru/en/status/) and [support](https://luch.lenarsalimov.ru/support/).
+I already use LUCH for real work in my own connected environment. The public plugin source is available to inspect; account activation and host-specific onboarding are separate from installing the package. See [service status](https://luch.lenarsalimov.ru/en/status/) and [support](https://luch.lenarsalimov.ru/support/).
 
 <details><summary>For developers and reviewers</summary>
 
 - 12 skills: browser, local browser, tabs, files, computer, server, services, control, safety, capabilities, troubleshooting and workflows.
 - Public client version: v0.1.6. The hosted service has its own lifecycle.
-- The [founder-environment case](https://github.com/lenar2/luch/blob/main/docs/REAL_WORK.md) is evidence of LUCH work, not a claim that Claude executed that specific case.
+- [My documented LUCH workflow](https://github.com/lenar2/luch/blob/main/docs/REAL_WORK.md) demonstrates actual work through connected tools; it is not a claim that Claude executed that specific case.
 - [Release gates](docs/PUBLIC_RELEASE_GATES.md) · [Safety](SECURITY.md) · [Apache-2.0](LICENSE).
 
 </details>

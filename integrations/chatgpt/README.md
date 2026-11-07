@@ -3,7 +3,7 @@
 # LUCH for ChatGPT
 ### Turn a question into a sourced brief — then decide what to do.
 
-ChatGPT is where you shape the question. **LUCH can bring selected web and connected resources into the work**, so the conversation can return with sources, comparisons and a result you can inspect.
+I am developing this ChatGPT integration to connect questions to verifiable work. **LUCH can bring selected web and connected resources into the work**, so the conversation can return with sources, comparisons and a result you can inspect.
 
 [**See the ChatGPT workflow**](CHATGPT_WORKFLOW.md) · [**Package and setup**](#connect-the-chatgpt-candidate) · [Русский](README.ru.md) · [LUCH platform](https://github.com/lenar2/luch)
 
@@ -46,15 +46,15 @@ python3 integrations/chatgpt/build_package.py
 
 ## Your conversation. Your sources. Your next move.
 
-LUCH is used for real work in the founder's connected environment. This public ChatGPT package is a candidate for evaluation; it is not represented as an approved OpenAI Directory listing. Account access and host availability are separate from building or downloading the package.
+I already use LUCH for real work in my connected environment. This public ChatGPT package is a candidate for evaluation; it is not represented as an approved OpenAI Directory listing. Account access and host availability are separate from building or downloading the package.
 
-The founder's [documented LUCH outcome](https://github.com/lenar2/luch/blob/main/docs/REAL_WORK.md) shows the broader product in action. It is not presented as a ChatGPT-specific execution test.
+[My documented LUCH outcome](https://github.com/lenar2/luch/blob/main/docs/REAL_WORK.md) shows the broader product in action. It is not presented as a ChatGPT-specific execution test.
 
 [Service status](https://luch.lenarsalimov.ru/en/status/) · [Support](https://luch.lenarsalimov.ru/support/) · [Privacy](https://luch.lenarsalimov.ru/privacy/)
 
 <details><summary>For integration reviewers</summary>
 
-The portable package is v0.1.6 and contains no credentials. The founder's private ChatGPT installation (v0.3.51) is a separate environment and is not replaced by this candidate.
+The portable package is v0.1.6 and contains no credentials. My private ChatGPT installation (v0.3.51) is separate and is not replaced by this candidate.
 
 Before a public directory submission, a new non-owner user must complete OAuth, discover the actual tools, perform an authorized read-only task, receive denial on an unapproved resource, and verify revocation. These are distinct acceptance tests; package generation is not a substitute.
 

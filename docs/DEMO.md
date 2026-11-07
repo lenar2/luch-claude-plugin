@@ -31,4 +31,4 @@ Review a draft before it is saved or published. Confirm external submissions and
 
 ---
 
-This is a **guided description of the product workflow**, not a fabricated customer story or a claim that a fresh user has passed onboarding. The real founder-environment LUCH case is documented in the [platform repository](https://github.com/lenar2/luch/blob/main/docs/REAL_WORK.md). Host access and current tool availability are determined by the live account and session.
+This is a **guided description of the product workflow**, not a fabricated customer story or a claim that a fresh user has passed onboarding. My documented LUCH workflow is available in the [platform repository](https://github.com/lenar2/luch/blob/main/docs/REAL_WORK.md). Host access and current tool availability are determined by the live account and session.
