@@ -1,4 +1,4 @@
-<p><img src="https://raw.githubusercontent.com/lenar2/luch/main/website/assets/luch-ray.svg" width="38" alt="LUCH"></p>
+<p><img src="assets/luch-plugin-B-128.png" width="52" alt="Временный знак LUCH, версия B"></p>
 
 # LUCH для Claude
 ### Соедините разрозненные материалы в решение, которое можно объяснить.
@@ -7,7 +7,7 @@
 
 [**Посмотреть сценарий Claude**](docs/CLAUDE_WORKFLOW.ru.md) · [**Подключить Claude**](#подключение-к-claude) · [English](README.md) · [Платформа LUCH](https://github.com/lenar2/luch)
 
-![Сценарий Claude: задача проекта, выбранные материалы и подготовка решения](assets/claude-workflow.svg)
+![Сценарий Claude: задача проекта, выбранные материалы и подготовка решения](https://raw.githubusercontent.com/lenar2/luch-claude-plugin/a46f237340a720d6bffef192467a850dc8c55c23/assets/claude-workflow.svg)
 
 ## Сценарий Claude: от задачи проекта к ясному решению
 
@@ -59,7 +59,7 @@
 <details><summary>Разработчикам и проверяющим</summary>
 
 - 12 навыков: браузер, локальный браузер, вкладки, файлы, компьютер, сервер, сервисы, управление, безопасность, возможности, диагностика и сценарии.
-- Версия клиентского пакета: v0.1.6. У размещённого сервиса свой жизненный цикл.
+- Версия клиентского пакета: v0.1.7. У размещённого сервиса свой жизненный цикл.
 - [Мой документированный сценарий LUCH](https://github.com/lenar2/luch/blob/main/docs/REAL_WORK.ru.md) показывает работу через подключённые инструменты, но не утверждает, что именно Claude выполнил эту задачу.
 - [Критерии выпуска](docs/PUBLIC_RELEASE_GATES.md) · [Безопасность](SECURITY.md) · [Apache-2.0](LICENSE).
 

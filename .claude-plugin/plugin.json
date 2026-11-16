@@ -1,7 +1,7 @@
 {
   "name": "luch",
   "displayName": "LUCH",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Bring Claude's reasoning to the work around your brief: compare selected web sources and authorized files, prepare a decision note, and return with a result you can inspect.",
   "author": {
     "name": "Lenar Salimov",
@@ -9,7 +9,7 @@
   },
   "license": "Apache-2.0",
   "homepage": "https://luch.lenarsalimov.ru/",
-  "icon": "./assets/logo-draft-text-only.png",
+  "icon": "./assets/luch-plugin-B-128.png",
   "documentationUrl": "https://luch.lenarsalimov.ru/docs/get-started/",
   "supportUrl": "https://luch.lenarsalimov.ru/support/",
   "privacyPolicyUrl": "https://luch.lenarsalimov.ru/privacy/",

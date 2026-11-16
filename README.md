@@ -1,4 +1,4 @@
-<p><img src="https://raw.githubusercontent.com/lenar2/luch/main/website/assets/luch-ray.svg" width="38" alt="LUCH"></p>
+<p><img src="assets/luch-plugin-B-128.png" width="52" alt="LUCH provisional plugin icon B"></p>
 
 # LUCH for Claude
 ### Turn scattered material into a decision you can explain.
@@ -7,7 +7,7 @@ I built this Claude integration so reasoning can reach the materials behind it. 
 
 [**See the Claude workflow**](docs/CLAUDE_WORKFLOW.md) · [**Connect in Claude**](#bring-luch-into-claude) · [Русский](README.ru.md) · [LUCH platform](https://github.com/lenar2/luch)
 
-![Claude workflow: project brief, selected materials and a decision-ready synthesis](assets/claude-workflow.svg)
+![Claude workflow: project brief, selected materials and a decision-ready synthesis](https://raw.githubusercontent.com/lenar2/luch-claude-plugin/a46f237340a720d6bffef192467a850dc8c55c23/assets/claude-workflow.svg)
 
 ## A Claude workflow: from a project brief to a clear decision
 
@@ -59,7 +59,7 @@ I already use LUCH for real work in my own connected environment. The public plu
 <details><summary>For developers and reviewers</summary>
 
 - 12 skills: browser, local browser, tabs, files, computer, server, services, control, safety, capabilities, troubleshooting and workflows.
-- Public client version: v0.1.6. The hosted service has its own lifecycle.
+- Public client version: v0.1.7. The hosted service has its own lifecycle.
 - [My documented LUCH workflow](https://github.com/lenar2/luch/blob/main/docs/REAL_WORK.md) demonstrates actual work through connected tools; it is not a claim that Claude executed that specific case.
 - [Release gates](docs/PUBLIC_RELEASE_GATES.md) · [Safety](SECURITY.md) · [Apache-2.0](LICENSE).
 
