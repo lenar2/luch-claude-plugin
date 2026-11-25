@@ -2,7 +2,7 @@
   "mcpServers": {
     "luch": {
       "type": "http",
-      "url": "https://api.lenarsalimov.ru/luch/core/mcp"
+      "url": "https://luch.lenarsalimov.ru/luch/core/mcp"
     }
   }
 }
