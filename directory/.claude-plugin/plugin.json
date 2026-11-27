@@ -1,0 +1,25 @@
+{
+  "name": "luch-projects",
+  "displayName": "LUCH Projects for Claude",
+  "version": "0.1.0",
+  "description": "Inspect and update authorized GitHub projects through LUCH. Read repository evidence, create issues, prepare and commit file changes, and open pull requests using named GitHub operations—not browser or desktop automation.",
+  "author": {
+    "name": "Lenar Salimov",
+    "url": "https://luch.lenarsalimov.ru/"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://luch.lenarsalimov.ru/",
+  "icon": "./assets/luch-plugin-B-128.png",
+  "documentationUrl": "https://github.com/lenar2/luch-claude-plugin/blob/main/directory/README.md",
+  "supportUrl": "https://luch.lenarsalimov.ru/support/",
+  "privacyPolicyUrl": "https://luch.lenarsalimov.ru/privacy/",
+  "termsOfServiceUrl": "https://luch.lenarsalimov.ru/terms/",
+  "keywords": [
+    "LUCH",
+    "GitHub",
+    "projects",
+    "issues",
+    "pull requests",
+    "OAuth"
+  ]
+}
