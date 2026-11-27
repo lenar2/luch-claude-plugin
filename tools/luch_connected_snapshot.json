@@ -1,0 +1,844 @@
+{
+  "schemaVersion": 1,
+  "source": "Tools currently exposed by authenticated ChatGPT LUCH connector on 2026-11-28 (not verified in Claude)",
+  "total": 166,
+  "groups": {
+    "other": 72,
+    "local_browser": 41,
+    "github": 23,
+    "server": 10,
+    "server_browser": 20
+  },
+  "tools": [
+    {
+      "name": "new_chat",
+      "group": "other",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "device_list",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "browser_list",
+      "group": "local_browser",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "browser_tabs",
+      "group": "local_browser",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "browser_read_text",
+      "group": "local_browser",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "files_capabilities",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "files_read",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "files_write",
+      "group": "other",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "files_manage",
+      "group": "other",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "terminal_exec",
+      "group": "other",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "luch_connection_recover",
+      "group": "other",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "terminal_submit",
+      "group": "other",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "job_status",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "job_list",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "job_cancel",
+      "group": "other",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "browser_health",
+      "group": "local_browser",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "browser_start",
+      "group": "local_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "browser_new_tab",
+      "group": "local_browser",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "browser_new_window",
+      "group": "local_browser",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "browser_window_info",
+      "group": "local_browser",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "browser_window_set",
+      "group": "local_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "browser_close_tab",
+      "group": "local_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "browser_navigate",
+      "group": "local_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "browser_click",
+      "group": "local_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "browser_mouse_move",
+      "group": "local_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "browser_click_at",
+      "group": "local_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "browser_drag_at",
+      "group": "local_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "browser_hit_test",
+      "group": "local_browser",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "browser_scroll",
+      "group": "local_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "browser_insert_text",
+      "group": "local_browser",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "browser_accessibility_snapshot",
+      "group": "local_browser",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "browser_click_accessible",
+      "group": "local_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "browser_type",
+      "group": "local_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "browser_wait_url",
+      "group": "local_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "browser_wait_load",
+      "group": "local_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "browser_wait_network_idle",
+      "group": "local_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "browser_network_summary",
+      "group": "local_browser",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "browser_console_watch",
+      "group": "local_browser",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "browser_screenshot",
+      "group": "local_browser",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "browser_upload",
+      "group": "local_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "browser_download",
+      "group": "local_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "browser_status",
+      "group": "local_browser",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "browser_open_tab",
+      "group": "local_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "browser_activate_tab",
+      "group": "local_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "browser_reload",
+      "group": "local_browser",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "browser_back",
+      "group": "local_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "browser_forward",
+      "group": "local_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "browser_select",
+      "group": "local_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "browser_wait",
+      "group": "local_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "browser_recover",
+      "group": "local_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "browser_key_chord",
+      "group": "local_browser",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "browser_press",
+      "group": "local_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "mac_setup_create",
+      "group": "other",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "device_pairing_create",
+      "group": "other",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "device_rename",
+      "group": "other",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "device_set_default",
+      "group": "other",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "device_revoke",
+      "group": "other",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "github_status",
+      "group": "github",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "github_repo_head",
+      "group": "github",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "github_repo_info",
+      "group": "github",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "github_branch_list",
+      "group": "github",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "github_branch_create",
+      "group": "github",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "github_branch_delete",
+      "group": "github",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "github_tree",
+      "group": "github",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "github_file_get",
+      "group": "github",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "github_commit_log",
+      "group": "github",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "github_commit_get",
+      "group": "github",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "github_search_code",
+      "group": "github",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "github_compare",
+      "group": "github",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "github_apply_changes",
+      "group": "github",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "github_tag_list",
+      "group": "github",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "github_tag_create",
+      "group": "github",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "github_tag_delete",
+      "group": "github",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "github_api_capabilities",
+      "group": "github",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "github_issue",
+      "group": "github",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "github_pr",
+      "group": "github",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "github_release",
+      "group": "github",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "github_queue_submit",
+      "group": "github",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "github_queue_list",
+      "group": "github",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "github_queue_get",
+      "group": "github",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "luch_status",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "transport_status",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "server_list",
+      "group": "server",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "server_status",
+      "group": "server",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "server_companion_status",
+      "group": "server",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "server_companion_ping",
+      "group": "server",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "server_exec",
+      "group": "server",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "server_device_pairing_create",
+      "group": "server",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "server_device_list",
+      "group": "server",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "server_device_status",
+      "group": "server",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "server_device_diagnostics",
+      "group": "server",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "server_device_exec",
+      "group": "server",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "critic_send",
+      "group": "other",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "browser_route",
+      "group": "local_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "server_browser_health",
+      "group": "server_browser",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "server_browser_acquire",
+      "group": "server_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "server_browser_status",
+      "group": "server_browser",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "server_browser_evidence",
+      "group": "server_browser",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "server_browser_navigate",
+      "group": "server_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "server_browser_read_text",
+      "group": "server_browser",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "server_browser_screenshot",
+      "group": "server_browser",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "server_browser_click",
+      "group": "server_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "server_browser_type",
+      "group": "server_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "server_browser_wait",
+      "group": "server_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "server_browser_upload",
+      "group": "server_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "server_browser_download",
+      "group": "server_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "server_browser_mouse_move",
+      "group": "server_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "server_browser_click_at",
+      "group": "server_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "server_browser_hit_test",
+      "group": "server_browser",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "server_browser_tabs",
+      "group": "server_browser",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "server_browser_tab_new",
+      "group": "server_browser",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "server_browser_tab_select",
+      "group": "server_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "server_browser_tab_close",
+      "group": "server_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "server_browser_release",
+      "group": "server_browser",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "peer_status",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "peer_register",
+      "group": "other",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "peer_list",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "peer_send",
+      "group": "other",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "peer_inbox",
+      "group": "other",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "peer_ack",
+      "group": "other",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "peer_reply",
+      "group": "other",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "chat_bridge_status",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "chat_bridge_threads",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "chat_bridge_send",
+      "group": "other",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "chat_bridge_result",
+      "group": "other",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "notes_capabilities",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "notes_read",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "notes_write",
+      "group": "other",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "computer_capabilities",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "computer_read",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "computer_action",
+      "group": "other",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "native_app_read",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "native_app_click_text",
+      "group": "other",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "telegram_member_extract",
+      "group": "other",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "getcourse_capabilities",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "getcourse_status",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "getcourse_inventory",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "getcourse_verify_customer_access",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "getcourse_verify_sales_chain",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "getcourse_prepare_course_sale",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "tilda_status",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "tilda_projects",
+      "group": "other",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "tilda_pages",
+      "group": "other",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "tilda_page",
+      "group": "other",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "tilda_blocks",
+      "group": "other",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "tilda_zero",
+      "group": "other",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "tilda_preview",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "tilda_publish",
+      "group": "other",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "tilda_verify",
+      "group": "other",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "photos_sources",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "photos_source_status",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "photos_search",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "photos_preview",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "photos_get",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "photos_export",
+      "group": "other",
+      "reviewClass": "manual_review"
+    },
+    {
+      "name": "iphone_status",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "iphone_capabilities",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "iphone_setup_create",
+      "group": "other",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "iphone_media_sources",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "iphone_media_search",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "iphone_media_get",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "iphone_media_preview",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "companion_mesh_status",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "iphone_companion_status",
+      "group": "other",
+      "reviewClass": "read_candidate"
+    },
+    {
+      "name": "iphone_companion_ping",
+      "group": "other",
+      "reviewClass": "mutation_or_interaction"
+    },
+    {
+      "name": "h2_add_basic_user",
+      "group": "other",
+      "reviewClass": "manual_review"
+    }
+  ]
+}

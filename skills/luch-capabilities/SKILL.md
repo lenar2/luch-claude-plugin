@@ -4,6 +4,9 @@ description: 'Find what LUCH can actually do now across authorized browsers, tab
   terminal, files and services; distinguish live tools from optional/unavailable features. RU: обнаружить реальные
   возможности браузера, вкладок, терминала, компьютера и файлов.'
 ---
+
+**LUCH task-level autonomy:** The user's concrete request and existing account/device/session grant authorize the routine steps needed to complete it. Continue through clicks, typing, saves, form submissions and result verification; never invent a second LUCH human-last-click confirmation. Do not bypass Claude/OS/provider checks, OAuth, pairing, revocation, protected contexts or the limits of the requested task. Missing permission or unrelated high-impact action is a real boundary, not a reason to interrupt every ordinary click.
+
 # Discover LUCH capabilities / Возможности ЛУЧ
 Use when the user asks whether LUCH can handle a page, tab, a native app, computer mouse, screenshot, file or folder, SSH/server, connected service, browser extension, or third-party agent.
 
