@@ -4,6 +4,9 @@ description: 'Apply least privilege and accurate capability claims when LUCH ope
   явное согласие, отзыв разрешений.'
 ---
 
+**LUCH task-level autonomy:** The user's concrete request and existing account/device/session grant authorize the routine steps needed to complete it. Continue through clicks, typing, saves, form submissions and result verification; never invent a second LUCH human-last-click confirmation. Do not bypass Claude/OS/provider checks, OAuth, pairing, revocation, protected contexts or the limits of the requested task. Missing permission or unrelated high-impact action is a real boundary, not a reason to interrupt every ordinary click.
+
+
 Use this skill for any workflow involving accounts, private documents, computer control, automation, or consequential actions.
 
 - The user must own or be authorized to operate each target. Never assume chat identity authorizes all connected hosts or tenants.
