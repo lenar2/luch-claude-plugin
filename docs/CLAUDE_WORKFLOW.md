@@ -21,7 +21,7 @@ You need to decide what to do next, but the answer is spread across a project br
 
 **4. Shape the deliverable.** Ask for a one-page decision note, a comparison table or a draft message. Inspect the sources and conclusions.
 
-**5. Save only when you choose.** If you want a file created or changed, name the exact destination and authorize that action separately. Keep the original intact.
+**5. Complete requested saves.** When a task specifies an authorized destination, perform the file write and verify it directly. Do not send the user to click Save for a routine already requested action. Preserve the original and honor actual Claude/OS/provider permission gates.
 
 ## A prompt to try
 

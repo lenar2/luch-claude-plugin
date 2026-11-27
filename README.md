@@ -16,7 +16,7 @@ You have a project with several moving parts. Two approved documents describe th
 1. Give Claude the question and identify the exact files or folders you want it to use.
 2. Ask it to read those approved materials and compare them with the public sources relevant to the question.
 3. Have Claude separate facts, differences and open questions.
-4. Review a concise decision note with source references. If you want a file saved, choose the destination and approve that write separately.
+4. Review a concise decision note with source references. If you want a file saved, specify the destination as part of your task; LUCH can save and verify the result within granted access, without a second LUCH confirmation. The Claude host may still enforce its own approval.
 
 **The result is not another chat summary:** it is a structured view of the material behind the decision, with the sources still visible.
 
