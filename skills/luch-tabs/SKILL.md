@@ -4,7 +4,10 @@ description: 'Control user-authorized browser tabs and window state: list, open,
   tabs with verification. RU: вкладки, переходы, история страниц, скриншоты и клики.'
 ---
 
-**Public Core 0.1.5 availability gate:** This skill is guidance only. Before invoking an operation, verify that the **currently authenticated Claude host** exposes the exact LUCH tool and that the user has the required scoped grant. If absent or unverified, report `NOT_AVAILABLE` or `NOT_RUN` instead of implying access. No private OWNER LUCH fallback is permitted.
+
+**LUCH task-level autonomy:** The user's concrete request and existing account/device/session grant authorize the routine steps needed to complete it. Continue through clicks, typing, saves, form submissions and result verification; never invent a second LUCH human-last-click confirmation. Do not bypass Claude/OS/provider checks, OAuth, pairing, revocation, protected contexts or the limits of the requested task. Missing permission or unrelated high-impact action is a real boundary, not a reason to interrupt every ordinary click.
+
+**Live capability gate:** This skill does not itself grant access. Discover the exact tool exposed in the authenticated Claude host and the intended device/account scope. If absent, report `NOT_AVAILABLE` rather than claiming success or switching to an unrelated device; do not bypass host permissions.
 # LUCH Browser Tabs / Вкладки
 For tabs/windows, prefer the host's exact exposed browser tool and the user's active authorized session.
 - When using a local Browser Companion, require installation, pairing, and visible per-tab grant. Extension local preview does not yet enable remote agents.
